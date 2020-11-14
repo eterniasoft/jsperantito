@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eterniasoft/jsperantito/issues"
   },
-  "homepage": "https://github.com/eterniasoft/jsperantito#readme"
+  "homepage": "https://github.com/eterniasoft/jsperantito#readme",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
 }
