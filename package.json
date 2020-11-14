@@ -1,0 +1,19 @@
+{
+  "name": "jsperantito",
+  "version": "0.1.0",
+  "description": "Cliente SDK de Sperant API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eterniasoft/jsperantito.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eterniasoft/jsperantito/issues"
+  },
+  "homepage": "https://github.com/eterniasoft/jsperantito#readme"
+}
