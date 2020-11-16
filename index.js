@@ -1,4 +1,5 @@
-const utils = require('./lib/utils.js')
+const { _enforce } = require('./lib/utils.js')
+const _makeRequest = require('./lib/makeRequest.js')
 
 function JSperantito (config) {
   this._enforce(config, ['token'])
@@ -6,7 +7,8 @@ function JSperantito (config) {
 }
 
 JSperantito.prototype = {
-  _enforce: utils._enforce 
+  _enforce: _enforce,
+  _makeRequest: _makeRequest
 }
 
 module.exports = JSperantito
