@@ -1,13 +1,17 @@
 const JSperantito = require('../')
 const { assert, expect } = require('chai')
-const { TOKEN } = require('../lib/Variables.js')
+const {
+  TOKEN,
+  TOKEN_UNAUTHORIZED
+} = require('../lib/Variables.js')
 
 describe('Projects', () => {
   var sperant = new JSperantito({token: TOKEN})
 
-  it('expect return error for token not authorized on run method getProjects', (done) => {
+  it('expect return error for token not authorized on run getProjects', (done) => {
     var sperant = new JSperantito({token: 'wrong token'})
-    expect(sperant.getProjects()).to.throw(TypeError)
+    expect(sperant.getProjects()).to.throw(TOKEN_UNAUTHORIZED)
+    expect(sperant.getProjects(1)).to.throw(TOKEN_UNAUTHORIZED)
     done()
   })
 

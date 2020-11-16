@@ -8,7 +8,7 @@ const {
 
 describe('Constructor', () => {
   it('expect error when config is not present', (done) => {
-    expect(() => new JSperantito()).to.throw(PARAMETERS_UNDEFINED).with.property('code', DEFAULT_ERROR_CODE)
+    expect(() => new JSperantito()).to.throw(PARAMETERS_UNDEFINED)
     done()
   })
 
