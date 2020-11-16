@@ -18,5 +18,8 @@
   "homepage": "https://github.com/eterniasoft/jsperantito#readme",
   "devDependencies": {
     "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
   }
 }

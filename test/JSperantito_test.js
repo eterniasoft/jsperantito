@@ -1,14 +1,15 @@
-var JSperantito = require('../')
-var assert = require('assert')
+var JSperantito = require('../index.js');
+var { assert, expect } = require('chai');
+var should = require('chai').should()
 
 describe('Constructor', () => {
   it('should return error when config is not present', (done) => {
-    assert.throws(() => new JSperantito() )
+    (() => new JSperantito()).should.throw()
     done()
   })
 
   it('should succed when config are provided', (done) => {
-    assert.ok(() => new JSperantito({token: 'token'}) )
+    expect(new JSperantito({token: 'token'})).to.be.ok
     done()
   })
 })
