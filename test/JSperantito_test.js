@@ -1,5 +1,5 @@
-var JSperantito = require('../index.js');
-var { assert, expect } = require('chai');
+var JSperantito = require('../')
+var { assert, expect } = require('chai')
 var should = require('chai').should()
 
 describe('Constructor', () => {
