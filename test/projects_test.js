@@ -1,6 +1,9 @@
 const JSperantito = require('../')
 const { assert, expect } = require('chai')
-const { TOKEN } = require('../lib/variables.js')
+const {
+  TEST_TOKEN,
+  TEST_PROJECT_ID
+} = require('../lib/variables.js')
 
 describe('Projects', () => {
   describe('Token Unauthorized', () => {
@@ -24,7 +27,7 @@ describe('Projects', () => {
   })
 
   describe('Requests', () => {
-    var sperant = new JSperantito({token: TOKEN})
+    var sperant = new JSperantito({token: TEST_TOKEN})
     it('expect return all projects', async () => {
       const { data, code } = await sperant.getProjects()
       expect(code).to.equal(200)
