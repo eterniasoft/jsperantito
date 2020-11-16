@@ -3,7 +3,7 @@ const { assert, expect } = require('chai')
 const {
   TOKEN,
   TOKEN_UNAUTHORIZED
-} = require('../lib/Variables.js')
+} = require('../lib/variables.js')
 
 describe('Projects', () => {
   var sperant = new JSperantito({token: TOKEN})

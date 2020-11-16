@@ -1,4 +1,4 @@
-const utils = require('./lib/Utils.js')
+const utils = require('./lib/utils.js')
 
 function JSperantito (config) {
   this._enforce(config, ['token'])

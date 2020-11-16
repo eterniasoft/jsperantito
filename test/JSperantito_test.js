@@ -4,7 +4,7 @@ const {
   DEFAULT_ERROR_CODE,
   PARAMETERS_UNDEFINED,
   PARAMETERS_REQUIRED
-} = require('../lib/Variables.js')
+} = require('../lib/variables.js')
 
 describe('Constructor', () => {
   it('expect error when config is not present', (done) => {
