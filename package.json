@@ -21,6 +21,7 @@
     "mocha": "^8.2.1"
   },
   "dependencies": {
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0"
   }
 }
