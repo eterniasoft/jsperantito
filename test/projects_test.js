@@ -2,8 +2,9 @@ const JSperantito = require('../')
 const { assert, expect } = require('chai')
 const {
   TEST_TOKEN,
-  TEST_PROJECT_ID
-} = require('../lib/variables.js')
+  TEST_PROJECT_ID,
+  TEST_PROJECTS_Q
+} = require('../lib/variables.test.js')
 
 describe('Projects', () => {
   describe('Token Unauthorized', () => {
@@ -28,10 +29,39 @@ describe('Projects', () => {
 
   describe('Requests', () => {
     var sperant = new JSperantito({token: TEST_TOKEN})
-    it('expect return all projects', async () => {
-      const { data, code } = await sperant.getProjects()
-      expect(code).to.equal(200)
-      expect(data).to.be.a('object')
+    describe('getProjects - methods and validations for all projects', () => {
+      it('expect return all projects', async () => {
+        const { data, code } = await sperant.getProjects()
+
+        expect(code).to.equal(200)
+        expect(data).to.be.a('object')
+      })
+
+      it('expect return projects with parameter "q"', async () => {
+        const payload = {
+          params: {
+            q: TEST_PROJECTS_Q
+          }
+        }
+        const { data, code } = await sperant.getProjects(payload)
+
+        expect(code).to.equal(200)
+        expect(data).to.be.a('object')
+      })
+    })
+
+    describe('getProject - methods and validations for one project', () => {
+      it('expect return error for missing ID', (done) => {
+        expect(() => sperant.getProject()).to.throw(/not permit undefined or null/)
+        done()
+      })
+
+      it('expect return project with set id', async () => {
+        const { data, code } = await sperant.getProject(TEST_PROJECT_ID)
+
+        expect(code).to.equal(200)
+        expect(data).to.be.a('object')
+      })
     })
   })
 })
