@@ -1,3 +1,4 @@
+require('module-alias/register')
 const JSperantito = require('@root')
 const { expect } = require('chai')
 

@@ -10,7 +10,7 @@
     "test:projects:requests": "mocha ./test/projects/requests_test.js --timeout=15000"
   },
   "_moduleAliases": {
-    "@root": ".",
+    "@root": "./",
     "@lib": "./lib"
   },
   "repository": {
