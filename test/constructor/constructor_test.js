@@ -1,4 +1,4 @@
-var JSperantito = require('../index.js')
+var JSperantito = require('../../')
 var { assert, expect } = require('chai')
 
 const sperant = new JSperantito()
