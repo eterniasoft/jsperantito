@@ -1,5 +1,5 @@
-var JSperantito = require('@root')
-var { expect } = require('chai')
+const JSperantito = require('@root')
+const { expect } = require('chai')
 
 const sperant = new JSperantito()
 

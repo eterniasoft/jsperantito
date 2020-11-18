@@ -1,5 +1,5 @@
-var JSperantito = require('../../')
-var { expect } = require('chai')
+const JSperantito = require('../../')
+const { expect } = require('chai')
 
 const sperant = new JSperantito()
 
