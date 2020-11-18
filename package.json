@@ -11,7 +11,7 @@
   },
   "_moduleAliases": {
     "@root": ".",
-    "@lib" : "./lib"
+    "@lib": "./lib"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/eterniasoft/jsperantito#readme",
   "devDependencies": {
+    "eslint": "^7.13.0",
     "mocha": "^8.2.1"
   },
   "dependencies": {
