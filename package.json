@@ -6,7 +6,6 @@
   "scripts": {
     "test:sdk:constructor": "mocha ./test/sdk/constructor_test.js",
     "test:sdk:info": "mocha ./test/sdk/info_test.js",
-    "test:projects:methods": "mocha ./test/projects/validations_test.js",
     "test:projects:requests": "mocha ./test/projects/requests_test.js --timeout=15000"
   },
   "_moduleAliases": {
