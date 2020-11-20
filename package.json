@@ -7,7 +7,8 @@
     "test:sdk:constructor": "mocha ./test/sdk/constructor_test.js",
     "test:sdk:info": "mocha ./test/sdk/info_test.js",
     "test:projects:requests": "mocha ./test/modules/projects/requests_test.js --timeout=15000",
-    "test:units:requests": "mocha ./test/modules/units/requests_test.js --timeout=15000"
+    "test:units:requests": "mocha ./test/modules/units/requests_test.js --timeout=15000",
+    "test:budgets:requests": "mocha ./test/modules/budgets/requests_test.js --timeout=15000"
   },
   "_moduleAliases": {
     "@root": "./",
