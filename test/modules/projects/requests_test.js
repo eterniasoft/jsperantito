@@ -5,16 +5,14 @@ const tData = require('./data.json')
 
 describe('Projects - Requests', () => {
   it('should get project - getProject', async () => {
-    const { data, code } = await sperant.project.getProject(tData.project.id)
+    const data = await sperant.project.getProject(tData.project.id)
 
-    expect(code).to.equal(200)
     expect(data.project).to.be.a('object')
   })
 
   it('should return projects list - getProjects', async () => {
-    const { data, code } = await sperant.project.getProjects()
+    const data = await sperant.project.getProjects()
 
-    expect(code).to.equal(200)
     expect(data.projects).to.be.a('array')
   })
 
