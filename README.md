@@ -13,9 +13,12 @@ $ npm install jsperantito
 ### Projects
 Revisar el [Manual](https://sperant.gitbook.io/api-sperant/metodos/proyectos)
 ```javascript
-const JSperantito = require('jsperantito')
-
-const sperant = new JSperantito({ token: SPERANT_TOKEN })
+const sperant = require('jsperantito')
+sperant.configure({
+  token: 'SPERANT_TOKEN', // required
+  host: 'api.sperant.com', // optional, default: depend of NODE_ENV, if is 'Production' then api.sperant.com else api.eterniasoft.com
+  api_version: 'v2' // optional, default: 'v2', comment: 'For version 3, the library remains to be developed.'
+})
 
 async function getData () {
   try {
