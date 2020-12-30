@@ -1,7 +1,5 @@
-const JSperantito = require('../../')
 const { expect } = require('chai')
-
-const sperant = new JSperantito()
+const sperant = require('../../')
 
 describe('SDK - Constructor', () => {
   it('expect error when config is not present', (done) => {
