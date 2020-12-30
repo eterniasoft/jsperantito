@@ -1,6 +1,5 @@
-require('module-alias/register')
 const { expect } = require('chai')
-const sperant = require('@test/modules/init.js')
+const sperant = require('../init.js')
 const tData = require('./data.json')
 
 describe('Clients - Requests', () => {

@@ -1,5 +1,4 @@
-require('module-alias/register')
-const JSperantito = require('@root')
+const JSperantito = require('../../')
 const { expect } = require('chai')
 
 const sperant = new JSperantito()
@@ -11,7 +10,7 @@ describe('SDK - Constructor', () => {
   })
 
   it('should return token when config success', (done) => {
-    const config = require('@lib/config')
+    const config = require('../../lib/config')
     expect(config.default.token).to.equal('')
     
     sperant.configure({ token: 'test_token' })
