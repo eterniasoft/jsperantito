@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const JSperantito = require('./lib/jsperantito.js')
 
 function createInstance () {

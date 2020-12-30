@@ -1,6 +1,6 @@
 {
   "name": "jsperantito",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Cliente SDK de Sperant API",
   "main": "index.js",
   "scripts": {
