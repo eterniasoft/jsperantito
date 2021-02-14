@@ -7,7 +7,9 @@
     "test:sdk:constructor": "mocha ./test/sdk/constructor_test.js",
     "test:sdk:info": "mocha ./test/sdk/info_test.js",
     "test:v2:projects": "mocha ./test/v2/modules/projects --timeout=15000",
-    "test:v2:clients": "mocha ./test/v2/modules/clients --timeout=15000"
+    "test:v2:clients": "mocha ./test/v2/modules/clients --timeout=15000",
+    "test:v3:projects": "mocha ./test/v3/modules/projects --timeout=15000",
+    "test:v3:clients": "mocha ./test/v3/modules/clients --timeout=15000"
   },
   "repository": {
     "type": "git",
