@@ -17,4 +17,10 @@ describe('Clients - Requests', () => {
 
     validateList(data)
   })
+
+  it('should return data from client created - createClient', async () => {
+    const res = await sperant.client.createClient(tData.newClient)
+
+    validateObject(res, 'client')
+  })
 })

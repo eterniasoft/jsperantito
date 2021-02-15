@@ -1,5 +1,15 @@
 {
   "client": {
     "id": 81209
+  },
+  "newClient": {
+    "fname": "Angelica Testeda",
+    "lanme": "Gatubela",
+    "email": "angelica_buscada@gmail.com",
+    "project_related": 19,
+    "interest_type_id": 3,
+    "input_channel_id": 4,
+    "source_id": 76,
+    "observation": "Prueba Jsperantito"
   }
 }
