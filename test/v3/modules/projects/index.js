@@ -14,8 +14,10 @@ describe('Projects - Requests', () => {
 
   it('should return projects list - getProjects', async () => {
     const data = await sperant.project.getProjects()
+    const dataPerPage = await sperant.project.getProjects({page: 2})
 
     validateList(data)
+    validateList(dataPerPage)
   })
 
   /* Only API V3
